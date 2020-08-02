@@ -1,7 +1,7 @@
 const Hapi = require('hapi');
 
-const host = 'localhost';
-const port = 3000; 
+const host = 'localhost'; //your host
+const port = 3000; //your port
 
 const server = Hapi.Server({
     host: host,
@@ -19,4 +19,3 @@ const init = async () => {
 require('./routes/routes')(server);
 
 init();
-
